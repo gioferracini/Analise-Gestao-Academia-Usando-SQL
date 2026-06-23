@@ -1,125 +1,123 @@
-# 🏋 Gym Management Analytics — SQL Project
+# 🏋️ Análise de Gestão de Academia — Projeto SQL
+*SQL • MySQL • Análise de Dados*
 
-This project simulates a **gym management system**, using SQL to explore and extract strategic business insights from a relational database.  
-A total of **23 analytical SQL scripts** were developed, covering areas such as financial health, customer profiles, product sales, instructor allocation, and more.
+![Header](Imagens/header.png)
 
-All data are **fictitious and intended purely for portfolio and learning purposes**.
+Este projeto simula a gestão operacional e financeira de uma academia, utilizando SQL para explorar dados e gerar insights estratégicos. Foram desenvolvidas **23 consultas analíticas**, abrangendo evolução financeira, perfil dos alunos, padrões de utilização, vendas de produtos e distribuição de recursos.
 
----
-
-🧠 **Key Skills Demonstrated**
-
-* SQL (CTEs, joins, aggregations, window functions)
-* Data modeling & KPIs
-* Analytical reasoning and business storytelling
-* Realistic simulation of a gym operational database
+Todos os dados são fictícios e foram criados exclusivamente para fins de estudo e portfólio.
 
 ---
 
-## 🗃️ Database Structure
+## 🧠 Principais Habilidades
 
-The project uses the following main tables (available in .sql or .csv format):
-
-- `alunos` (students): personal data, age, neighborhood, registration and status
-- `planos` (membership plans): plan details and prices
-- `pagamentos` (payments): student payments, status, and payment method
-- `modalidades` (activities): list of activities offered (muscle training, cardio, pilates, etc.)
-- `frequencia` (attendance): daily logs of student presence by activity
-- `produtos` (products): supplements, apparel, accessories
-- `vendas_produtos` (product sales): transactions with quantities and values
-- `professores` (instructors): personal data, profile and salary
-- `professor_modalidade` (which instructor teaches which activity)
-- `despesas` & `pagamentos_despesas`: operational costs (rent, maintenance, energy)
+* SQL para análise de dados
+* Joins, CTEs e funções de janela
+* Modelagem relacional
+* Desenvolvimento de KPIs
+* Análise exploratória de dados
+* Storytelling com dados
+* Interpretação de indicadores de negócio
 
 ---
 
-## 📑 Developed Scripts
+## 📂 Estrutura da Base de Dados
 
-### 📈 Business Evolution
+O projeto é composto pelas seguintes tabelas:
 
-1. Annual evolution of total costs (payroll + expenses)
-2. Annual evolution of total revenues (memberships + product sales)
-3. Annual evolution of new enrollments
-4. Accumulated revenue by year
-5. Accumulated costs by year
-6. Product sales evolution over time
-
-### 👥 Customer Profile and Behavior
-
-7. Most frequent gender in attendance
-8. Frequency comparison by age group
-9. Most represented neighborhoods
-10. Average ticket by student
-11. Average ticket by neighborhood
-
-### 🏋 Gym Usage Patterns
-
-12. Most crowded periods (morning, afternoon, evening)
-13. Most crowded days of the week
-14. Most practiced activities
-15. Average ticket by activity
-16. Most sold products
-
-### 💰 Financial and Strategy
-
-17. Costs vs. revenues comparison
-18. Highest-paid instructors (overall)
-19. Highest-paid instructors by activity
-20. Membership distribution by plan
-21. Revenue share by plan
-22. Most common payment methods
-23. Instructors teaching more than one activity
+* **alunos**: informações cadastrais e situação dos alunos;
+* **planos**: tipos de planos e valores;
+* **pagamentos**: histórico de pagamentos e formas de pagamento;
+* **modalidades**: atividades oferecidas pela academia;
+* **frequencia**: registros de presença dos alunos;
+* **produtos**: suplementos, acessórios e vestuário;
+* **vendas_produtos**: vendas realizadas na loja da academia;
+* **professores**: dados dos profissionais e salários;
+* **professor_modalidade**: associação entre professores e modalidades;
+* **despesas** e **pagamentos_despesas**: custos operacionais da academia.
 
 ---
 
-## 🛠️ Tools Used
+## 📊 Principais Análises Desenvolvidas
 
-- SQL (MySQL)
-- MySQL Workbench (or any RDBMS client)
+### 📈 Evolução do Negócio
 
----
+* Evolução anual dos custos;
+* Evolução anual das receitas;
+* Crescimento das matrículas;
+* Receita acumulada por ano;
+* Custos acumulados por ano;
+* Evolução das vendas de produtos.
 
-🗃️ **Files**
+### 👥 Perfil e Comportamento dos Alunos
 
-/1 - Business Evolution – 6 SQL scripts (.sql format)
+* Perfil predominante dos frequentadores;
+* Comparação por faixa etária;
+* Distribuição geográfica dos alunos;
+* Ticket médio por aluno;
+* Ticket médio por bairro.
 
-/2 - Customer Profile – 5 SQL scripts (.sql format)
+### 🏋️ Padrões de Utilização
 
-/3 - Gym Usage Patterns – 5 SQL scripts (.sql format)
+* Horários de maior movimento;
+* Dias da semana mais movimentados;
+* Modalidades mais praticadas;
+* Ticket médio por modalidade;
+* Produtos mais vendidos.
 
-/4 - Financials & Strategy – 7 SQL scripts (.sql format)
+### 💰 Indicadores Financeiros e Estratégicos
 
-/5 - Database – Tables in SQL or CSV format
-
-README.md – Project documentation
-
----
-
-🚀 **How to Use**
-
-- Clone this repository
-- Import the database into your favorite RDBMS (like MySQL)
-- Run the SQL scripts to explore the insights
-- Feel free to adapt queries or use them in your portfolio
-
----
-
-📌 **Important Notes**
-
-This dataset was entirely generated with Python and does **not reflect real people or businesses**.
-
-Several queries use advanced SQL features like:
-- CTEs (`WITH`)
-- window functions (`ROW_NUMBER()`)
-- date functions (`DATE_FORMAT`, `DATEDIFF`)
+* Comparação entre receitas e despesas;
+* Professores com maiores salários;
+* Distribuição dos alunos por plano;
+* Participação da receita por plano;
+* Métodos de pagamento mais utilizados;
+* Professores responsáveis por múltiplas modalidades.
 
 ---
 
-## 📬 Contact
+## 🛠 Ferramentas Utilizadas
 
-- Email: gioferracini97@gmail.com
-- LinkedIn: [linkedin.com/in/giovanni-ferracini](https://www.linkedin.com/in/giovanni-ferracini/)
+* MySQL
+* SQL
+* MySQL Workbench
 
 ---
 
-⭐ If you found this analysis useful or insightful, feel free to star the repository!
+## 📁 Estrutura do Projeto
+
+```
+1 - Evolução do Negócio
+2 - Perfil dos Alunos
+3 - Padrões de Utilização
+4 - Indicadores Financeiros e Estratégicos
+5 - Base de Dados
+README.md
+```
+
+---
+
+## 🚀 Como Utilizar
+
+1. Clone este repositório;
+2. Importe as tabelas da base de dados em seu SGBD;
+3. Execute as consultas SQL disponíveis;
+4. Explore os indicadores e adapte as análises conforme necessário.
+
+---
+
+## 📌 Observações
+
+A base de dados foi inteiramente gerada para fins educacionais e não representa pessoas ou empresas reais.
+
+As consultas utilizam recursos como:
+
+* CTEs (`WITH`);
+* Funções de janela;
+* Funções de data;
+* Agregações e subconsultas;
+* Joins entre múltiplas tabelas.
+
+---
+
+⭐ Projeto desenvolvido para fins de estudo e composição de portfólio em Análise de Dados.
